@@ -10,9 +10,9 @@ enum MODE {
 }
 
 export const siteConfig = {
-  title: 'Isomorphic - React Typescript Admin Dashboard Template',
-  description: `Isomorphic the ultimate React TypeScript Admin Template. Streamline your admin dashboard development with our feature-rich, responsive, and highly customizable solution. Boost productivity and create stunning admin interfaces effortlessly.`,
-  logo: logoImg,
+  title: 'Cubicus - Admin Dashboard Template',
+  description: `Cubicus the ultimate React TypeScript Admin Template. Streamline your admin dashboard development with our feature-rich, responsive, and highly customizable solution. Boost productivity and create stunning admin interfaces effortlessly.`,
+  logo: "https://cubicus.io/images/logo",
   icon: logoIconImg,
   mode: MODE.LIGHT,
   layout: LAYOUT_OPTIONS.HYDROGEN,
@@ -25,15 +25,15 @@ export const metaObject = (
   description: string = siteConfig.description
 ): Metadata => {
   return {
-    title: title ? `${title} - Isomorphic Furyroad` : siteConfig.title,
+    title: title ? `${title} - Cubicus Furyroad` : siteConfig.title,
     description,
     openGraph: openGraph ?? {
-      title: title ? `${title} - Isomorphic Furyroad` : title,
+      title: title ? `${title} - Cubicus Furyroad` : title,
       description,
-      url: 'https://isomorphic-furyroad.vercel.app',
-      siteName: 'Isomorphic Furyroad', // https://developers.google.com/search/docs/appearance/site-names
+      url: 'https://dashboard.cubicus.io',
+      siteName: 'Cubicus Dashboard Furyroad', // https://developers.google.com/search/docs/appearance/site-names
       images: {
-        url: 'https://s3.amazonaws.com/redqteam.com/isomorphic-furyroad/itemdep/isobanner.png',
+        url: 'https://cubicus.io/images/logo',
         width: 1200,
         height: 630,
       },
